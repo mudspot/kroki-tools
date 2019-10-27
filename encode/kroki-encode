@@ -4,4 +4,4 @@ import base64;
 import zlib;
 
 with open(sys.argv[1], 'rb') as file:
-    print(base64.urlsafe_b64encode(zlib.compress(file.read(), 9)));
+    print(str(base64.urlsafe_b64encode(zlib.compress(file.read(), 9)), "utf-8"));
